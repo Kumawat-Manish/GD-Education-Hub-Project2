@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GD Edecation Hub-Transforming Online Education</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"> <img src="leptop.webp" alt="Logo"> </div>
+            <li><a href="/GD Education Hub Project1/Homepage2.html" target="_blank">Home</a></li>
+            <li><a href="/GD Education Hub Project1/Homepage2.html" target="_blank">About</a></li>
+            <div class="dropdown">
+               <button class="dropbtn"> Services</button>
+               <div class="dropdown-content">
+                <a href="https://www.google.com" target="_blank">Online Classes</a>
+                <a href="https://www.google.com" target="_blank">On Center Classes</a>
+                <a href="https://www.google.com" target="_blank">Home Tutions</a>
+               </div>
+            </div>
+            <li><a href="#" onclick="scrollToDiv('contactUs')" class="hide-caret">Contact</a></li>
+        </ul>
+        <div class="rightnav">
+            <form id="searchForm">
+             <input id="searchInput" type="text" title="Search" placeholder="Search GD Education" name="search">
+             <button type="button" onclick="performSearch()" class="btn btn-sm">Search</button>    
+            </form> 
+        </div>
+    </nav>
+    
+   
+    <section class="background firstsection hide-caret">
+        <div class="instituteName background">
+            <h1 class="instituteName1">GD Education Hub</h1>
+            <h5 class="instituteName2">Transforming Online Education</h5>
+        </div>
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">The Future of Education is here.</p>
+                <p class="text-small"> At GD Education Hub Jaipur,
+                 we aim to provide a safe, nurturing yet challenging
+                 environment to facilitate students in becoming lifelong
+                 learners both within and beyond the classrooms.
+                 each and every student as we strive for higher learning 
+                 outcomes and personal bests for all of our students.
+                </p>
+
+                <div class="buttons">
+                    <a href="https://www.youtube.com/watch?v=UVL6hzTvzvE&t">
+                     <button class="btn btn-sm">Subscribe</button>
+                    </a>   
+                    <a href="https://www.youtube.com/watch?v=UVL6hzTvzvE&t">
+                     <button class="btn btn-sm">Watch Video</button>
+                    </a> 
+                </div>
+            </div>
+
+            <div class="secondHalf">
+                <img src="leptop.webp" alt="Leptop Image" class="imgFluid">
+            </div>
+        </div>
+    </section>
+
+    <section class="Section Right hide-caret">
+        <div class="Paras" id="searchResults">
+         <p class="sectionTag text-big">This time is Era of Education</p>
+         <p class="sectionSubtag text-small"> We want our students to leave Instituste with the values of respect, cooperation, 
+         and persistence striving for excellence in whatever they do. We continuously strive to create an open and 
+         transparent environment with our stakeholders so that we can assist children to achieve their full potential.
+         Thus, we welcome you to share your valuable observations and suggestions. We hope that through your
+         participation and support you will continue to empower and motivate us to achieve the goal .</p>
+        </div>
+        <div class="thumbnail">
+            <img src="book.jpg" alt="Image" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="Section Left hide-caret">
+        <div class="Paras" style="padding-left: 140px" id="targetDiv">
+         <p class="sectionTag text-big">Transforming  Education in India</p>
+         <p class="sectionSubtag text-small">The history of education studies the processes, methods, and 
+            institutions involved in teaching and learning. It tries to explain how they have interacted
+             with each other and shaped educational practice until the present day. Education in
+             prehistory took place as a form of enculturation and focused on practical knowledge and
+             skills relevant to everyday concerns, for example, in relation to food, clothing, 
+             shelter, and protection. </p>
+        </div>
+        <div class="thumbnail">
+            <img src="bookmind.jpg" alt="Image" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="Section Right hide-caret">
+        <div class="Paras">
+         <p class="sectionTag text-big">Let's Grow Together</p>
+         <p class="sectionSubtag text-small"> Education is the transmission of knowledge, skills, and
+             character traits and comes in many forms. Formal education happens in a complex institutional 
+             framework, like public schools. Non-formal education is also structured but takes place
+             outside the formal schooling system while informal education is unstructured learning
+             through daily experiences.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="quiz.jpg" alt="Image" class="imgFluid">
+        </div>
+    </section>
+    <hr>
+    <section class="contact">
+        
+        <div id="formContainer">
+           <div class="formbox" id="contactUs"> 
+              <form id="myForm" onsubmit="submitForm(event)"> 
+                <h2 class="text-center hide-caret">Contact US</h2>   
+                <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
+                <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone Number">
+                <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your email">
+                <textarea class="form-input" name="text" id="text" cols="30" rows="3" placeholder="Ellabourate Your Concern"></textarea>
+                <button class="btn btn-submit btn-sm hide-caret">Submit</button>
+              </form>
+           </div> 
+
+            <div id="spinner">
+                <div id="loadingSpinner"></div>
+            </div>
+
+           <div id="confirmationMessage" class="hide-caret">
+              <div id="wrightLogo">
+                <img src="complete.png" alt="Image">
+              </div>
+             <p>Congratulations!</p> 
+             <p id="p2">You have submitted your details. We will connect with you shortly.</p>
+             <a href="http://127.0.0.1:5500/GD%20Education%20Hub%20Project1/index.html#" target="_blank">
+              <button class="btn btn-submit btn-sm hide-caret">Contact US</button>
+             </a>
+           </div>
+
+        </div> 
+
+    </section>
+
+    <footer>
+        <p class="text-footer hide-caret">
+            Copyright &copy; 2025 - All rights are reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
